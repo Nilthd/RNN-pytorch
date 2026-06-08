@@ -1,6 +1,6 @@
 # Vanilla RNN from Scratch — PyTorch
 
-A clean implementation of a **Recurrent Neural Network (RNN)** built manually in PyTorch — no `nn.RNN` used — to show exactly how sequential memory works at each timestep.
+A clean implementation of a **Recurrent Neural Network (RNN)** built manually in PyTorch, no `nn.RNN` used, to show exactly how sequential memory works at each timestep.
 
 Understanding the vanilla RNN is the foundation for everything that comes after: LSTMs, GRUs, and Transformers all build on this core idea.
 
@@ -14,13 +14,13 @@ h_t = tanh( W · [x_t, h_prev] + b )
 
 - `x_t` is the current input (e.g. today's reading)
 - `h_prev` is the memory from the previous step
-- `h_t` is the updated memory — a blend of old and new
+- `h_t` is the updated memory, a blend of old and new
 
 After processing the full sequence, the final `h_t` is a compressed summary used to make a prediction.
 
 ## Why Vanilla RNN Falls Short
 
-Vanilla RNNs struggle with **long sequences** — gradients shrink exponentially as they travel backwards through many timesteps (vanishing gradient problem). This is exactly why LSTMs were invented. See the [lstm-pytorch](https://github.com/Nilthd/lstm-pytorch) repo for the solution.
+Vanilla RNNs struggle with **long sequences**, gradients shrink exponentially as they travel backwards through many timesteps (vanishing gradient problem). This is exactly why LSTMs were invented. See the [lstm-pytorch](https://github.com/Nilthd/lstm-pytorch) repo for the solution.
 
 ## Project Structure
 
