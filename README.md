@@ -26,9 +26,9 @@ Vanilla RNNs struggle with **long sequences**, gradients shrink exponentially as
 
 ```
 rnn-pytorch/
-├── rnn.py           # Full implementation + training script
+├── rnn.py           #  implementation + training script
 ├── sample_data.csv  # Example CSV to test immediately
-├── requirements.txt # Dependencies
+├── requirements.txt 
 └── README.md
 ```
 
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 # Train on the included sample data
 python rnn.py --data sample_data.csv --target target
 
-# Train on YOUR own CSV
+# Train on  CSV
 python rnn.py --data your_file.csv --target your_target_column
 
 # Run demo mode (no CSV needed)
