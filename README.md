@@ -1,4 +1,4 @@
-# Vanilla RNN from Scratch — PyTorch
+# Vanilla RNN from Scratch using PyTorch
 
 A clean implementation of a **Recurrent Neural Network (RNN)** built manually in PyTorch, no `nn.RNN` used, to show exactly how sequential memory works at each timestep.
 
